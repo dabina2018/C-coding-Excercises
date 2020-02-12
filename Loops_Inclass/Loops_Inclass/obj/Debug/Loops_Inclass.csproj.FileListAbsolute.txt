@@ -1,7 +1,0 @@
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\obj\Debug\Loops_Inclass.csproj.CoreCompileInputs.cache
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\bin\Debug\Loops_Inclass.exe.config
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\bin\Debug\Loops_Inclass.exe
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\bin\Debug\Loops_Inclass.pdb
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\obj\Debug\Loops_Inclass.exe
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\obj\Debug\Loops_Inclass.pdb
-C:\Users\Daveena.Cooper\source\repos\Loops_Inclass\Loops_Inclass\obj\Debug\Loops_Inclass.csprojAssemblyReference.cache
