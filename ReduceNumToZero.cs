@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// This program counts the number of steps it takes to reduce a number to zero.
 namespace ReduceNumToZero
 {
     class Program
