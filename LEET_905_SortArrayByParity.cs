@@ -20,31 +20,31 @@ namespace SortArrayByParity
 
         static int[] SortArray(int[] A)
         {
-            int front = 0;
-            int end = A.Length - 1;
+            int front = 0;  // create front pointer at index 0
+            int end = A.Length - 1;  // set back(end) pointer to last index of array
             while (front < end)
             {
-                if(!IsEven(A[front]))
+                if(!IsEven(A[front]))  // if front is Odd 
                 {
-                    if (IsEven(A[end]))
+                    if (IsEven(A[end])) //if end is Even
                     {
-                        (A[end], A[front]) = (A[front], A[end]);
-                        front++;
-                        end--;                        
+                        (A[end], A[front]) = (A[front], A[end]); // if front is Odd and end is Even, swap the values
+                        front++; // increment front index/pointer
+                        end--;  //decrement back index/pointer                     
                     }
-                    else end--;
+                    else end--; // if front is Odd and end is Odd, decrement back index/pointer
                 }
                 else
                 {
-                    if (IsEven(A[end])) front++;
-                    else
+                    if (IsEven(A[end])) front++; //if front is even and end is even, increment front counter/index
+                    else // front is even and end is odd
                     {
-                        front++;
-                        end--;
+                        front++; //increment front counter 
+                        end--;  //decrement end counter
                     }
                 }
             }
-            return A;
+            return A; // return sorted array
         }
 
         static int[] Solution(int[] array)
@@ -60,7 +60,7 @@ namespace SortArrayByParity
             return resArray;
         }
 
-        private static bool IsEven(int num)
+        private static bool IsEven(int num) // method to determin if int is odd or even
         {
             return num % 2 == 0;
         }
