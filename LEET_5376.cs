@@ -10,8 +10,12 @@ namespace LEET5376
     {
         public static void Main()
         {
-            int[] nums = { 4, 3, 10, 9, 8 };
+            int[] nums = {4,3,10,9,8 };
             IList<int> result = Solution.MinSubsequence(nums);
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 
@@ -19,11 +23,34 @@ namespace LEET5376
     {
         public static IList<int> MinSubsequence(int[] nums)
         {
+            int len = nums.Length;
+            IList<int> subSeq = new List<int>();
+
+            if(len == 1)
+            {
+                 subSeq.Add(nums[0]);
+            }
+            else
+            {
+                int[] sortArr = Sort(nums);
+                int fPointer = findPointer(sortArr, len);
+
+                for (int p = len - 1; p >= fPointer; p--)
+                {
+                    subSeq.Add(sortArr[p]);
+                }
+            }
+            
+            return subSeq;
+        }
+        //Sort the Array least to greatest
+        static int[] Sort(int[] nums)
+        {
             int[] sortArr = new int[nums.Length];
             IList<int> subSeq = new List<int>();
             int len = nums.Length;
-            
-            for (int i = 0; i <= len-1; i++)
+
+            for (int i = 0; i <= len - 1; i++)
             {
                 int lowNum = nums[i];
                 for (int j = i; j < len; j++)
@@ -43,8 +70,13 @@ namespace LEET5376
             {
                 System.Console.WriteLine(item);
             }*/
-            
-            int bPointer = len-1;
+            return sortArr;
+        }
+
+        //find the front Pointer for cut off point
+        static int findPointer(int[] sortArr, int len)
+        {
+            int bPointer = len - 1;
             int fPointer = 0;
 
             int sumF = sortArr[fPointer];
@@ -56,8 +88,8 @@ namespace LEET5376
                 {
                     bPointer--;
                     sumB = sumB + sortArr[bPointer];
-                    sumF = sumF - sortArr[fPointer];
-                    fPointer--;
+                    //sumF = sumF - sortArr[fPointer];
+                    //fPointer--;
                 }
                 else
                 {
@@ -65,17 +97,11 @@ namespace LEET5376
                     sumF = sumF + sortArr[fPointer];
                 }
             }
-            //Console.WriteLine(sumB );
-            //Console.WriteLine(sumF);
-            //Console.WriteLine(bPointer);
-            //Console.WriteLine(fPointer);
-
-            
-            for (int p = len-1; p >fPointer; p--)
-            {
-                subSeq.Add(sortArr[p]);
-            }
-            return subSeq;
+            /*Console.WriteLine(sumB );
+            Console.WriteLine(sumF);
+            Console.WriteLine(bPointer);
+            Console.WriteLine(fPointer);*/
+            return fPointer;
         }
     }
 }
