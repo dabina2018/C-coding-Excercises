@@ -82,22 +82,23 @@ namespace LEET5376
             int sumF = sortArr[fPointer];
             int sumB = sortArr[bPointer];
 
-            for (int k = 0; k < (bPointer-1); k++)
+            for (int k = 0; k <= (bPointer); k++)
             {
-                if (sumF > sumB)
+                if (sumF >= sumB)
                 {
-                    /*if(fPointer >= bPointer)
+                    bPointer--;
+                    if (bPointer == fPointer)
                     {
                         sumF = sumF - sortArr[fPointer];
                         fPointer--;
-                    }*/
-                    bPointer--;
+                    }
                     sumB = sumB + sortArr[bPointer];
                 }
                 else
                 {
                     fPointer++;
-                    sumF = sumF + sortArr[fPointer];
+                    if (fPointer==bPointer) fPointer--;
+                    else sumF = sumF + sortArr[fPointer];
                 }
             }
             /*Console.WriteLine(sumB );
