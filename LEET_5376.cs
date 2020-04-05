@@ -10,7 +10,7 @@ namespace LEET5376
     {
         public static void Main()
         {
-            int[] nums = {10,2,5};
+            int[] nums = {4};
             IList<int> result = Solution.MinSubsequence(nums);
             foreach (var item in result)
             {
@@ -82,7 +82,7 @@ namespace LEET5376
             int sumF = sortArr[fPointer];
             int sumB = sortArr[bPointer];
 
-            for (int k = 0; k <= (bPointer); k++)
+            while (fPointer < bPointer)
             {
                 if (sumF >= sumB)
                 {
@@ -91,16 +91,23 @@ namespace LEET5376
                     {
                         sumF = sumF - sortArr[fPointer];
                         fPointer--;
-                    }
+                        sumB = sumB + sortArr[bPointer];
+                        return bPointer;
+                    }                
                     sumB = sumB + sortArr[bPointer];
                 }
                 else
                 {
                     fPointer++;
-                    if (fPointer==bPointer) fPointer--;
+                    if (fPointer == bPointer)
+                    {
+                        fPointer--;
+                        return bPointer;
+                    }
                     else sumF = sumF + sortArr[fPointer];
                 }
             }
+            
             /*Console.WriteLine(sumB );
             Console.WriteLine(sumF);
             Console.WriteLine(bPointer);
