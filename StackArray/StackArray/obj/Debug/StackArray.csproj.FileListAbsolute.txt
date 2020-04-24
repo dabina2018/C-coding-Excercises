@@ -1,0 +1,14 @@
+D:\Users\da.kupa\source\repos\StackArray\obj\Debug\StackArray.csprojAssemblyReference.cache
+D:\Users\da.kupa\source\repos\StackArray\obj\Debug\StackArray.csproj.CoreCompileInputs.cache
+D:\Users\da.kupa\source\repos\StackArray\bin\Debug\StackArray.exe.config
+D:\Users\da.kupa\source\repos\StackArray\bin\Debug\StackArray.exe
+D:\Users\da.kupa\source\repos\StackArray\bin\Debug\StackArray.pdb
+D:\Users\da.kupa\source\repos\StackArray\obj\Debug\StackArray.exe
+D:\Users\da.kupa\source\repos\StackArray\obj\Debug\StackArray.pdb
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.exe.config
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.exe
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.pdb
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.csprojAssemblyReference.cache
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.csproj.CoreCompileInputs.cache
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.exe
+D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.pdb
