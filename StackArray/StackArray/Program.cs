@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace StackArray_Prob
 {
     class Program
@@ -74,11 +75,11 @@ namespace StackArray_Prob
                         int[] temp = new int[size];
                         //Array.CopyTo(temp, 0);
                         //alternate copyTo
-                        for (int i = 0; i < Array.Length - 1; i++)
+                        /*for (int i = 0; i < Array.Length - 1; i++)
                         {
                             temp[i] = Array[i];
                             i++;
-                        }
+                        }*/
                         Array = temp;
                     }
                     else if (response == "no")
