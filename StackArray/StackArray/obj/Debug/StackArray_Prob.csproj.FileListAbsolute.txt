@@ -1,7 +1,0 @@
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.exe.config
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.exe
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\bin\Debug\StackArray.pdb
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray_Prob.csprojAssemblyReference.cache
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray_Prob.csproj.CoreCompileInputs.cache
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.exe
-D:\Users\da.kupa\Documents\code\C-coding-Excercises\StackArray\StackArray\obj\Debug\StackArray.pdb
